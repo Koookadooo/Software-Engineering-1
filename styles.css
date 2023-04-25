@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 5pt;
+}
+
+body h1{
+    text-align: center;
+    font-size: 80pt;
+    grid-column: span 2;
+    height: 100%;
+    width: 100%;
+}
+
+#card_table{
+    height: 800pt;
+    display: grid;
+    grid-template-columns: repeat(2, 12rem);
+    grid-template-rows: repeat(3, 18rem);
+    column-gap: 30px;
+    row-gap:30px;
+    place-content: center;
+    border: 1px solid black;
+    background-color: green;
+    margin: 100pt;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck{
+    grid-column: span 2;
+    height: 100%;
+    width: 45.75%;
+    border: 1px solid black;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 50pt;
+    width: 150pt;
+    margin-left: 100pt;
+    font-size: 20pt;
+}
+
+#user_interaction{
+    font-size: 20pt;
+    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#instructions{
+    font-size: 50pt;
+    text-align: center;
+}
